@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color kDarkPrimaryColor = Color(0xff2c3e50);
-  static const Color kScaffoldLightColor = Color(0xfff2fbfb);
+  static const Color kScaffoldLightColor = Color(0xfff5f5f5);
   static const Color klightGreen = Color(0xff00a072);
-  static const Color kPrimaryColor = Color(0xff00494b);
+  static const Color kPrimaryColor = Color(0xff000000);
   static const Color kGoldColor = Color(0xffffae00);
   static const Color kProfileCircleColor = Color(0xff86b494);
   static const Color kWhiteColor = Color(0xffffffff);
@@ -26,7 +26,7 @@ class AppColors {
   static const Color kUnFocusBorderColor = Color(0xffEDEDED);
   static const Color kHintTextColor = Color(0xffC2C2C2);
   static const Color kDarkBlueColor = Color(0xff242424);
-
+  static const Color kFormFeildColor = Color(0xfffdfdfd);
   static const Color kBackgroundHintTextColor = Color(0xfffdfdff);
   static const Color kGrayColor = Color(0xffbebebe);
   static const Color starColor = Color(0xffed0013);

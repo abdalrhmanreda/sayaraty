@@ -1,11 +1,10 @@
 import 'dart:async';
 
-import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-
+import 'package:sayaraty/features/login/logic/login_cubit.dart';
 
 final getIt = GetIt.instance;
 
 Future<void> setupGetIt() async {
-
+  getIt.registerFactory<LoginCubit>(() => LoginCubit());
 }

@@ -55,8 +55,10 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
-              onPressed: () {
-                SharedPrefService().setBool('isFirstTime', true).then((value) {
+              onPressed: () async {
+                await SharedPrefService().setBool('isFirstTime', true).then((
+                  value,
+                ) {
                   context.navigateAndFinishNyNamed(context, RoutePath.login);
                 });
               },
@@ -129,15 +131,15 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                   duration: const Duration(milliseconds: 900),
                   curve: Curves.easeIn,
                   child: CustomButton(
-                    onPressed: () {
-                      SharedPrefService().setBool('isFirstTime', true).then((
-                        value,
-                      ) {
-                        context.navigateAndFinishNyNamed(
-                          context,
-                          RoutePath.login,
-                        );
-                      });
+                    onPressed: () async {
+                      await SharedPrefService()
+                          .setBool('isFirstTime', true)
+                          .then((value) {
+                            context.navigateAndFinishNyNamed(
+                              context,
+                              RoutePath.login,
+                            );
+                          });
                     },
                     text: AppLocalizations.of(context)!.gettingStarted,
                     color: AppColors.kWhiteColor,
