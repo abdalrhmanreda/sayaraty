@@ -18,7 +18,7 @@ class Style {
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.kScaffoldLightColor,
       elevation: 0,
-      titleTextStyle: GoogleFonts.dmSans(
+      titleTextStyle: GoogleFonts.poppins(
         color: AppColors.kPrimaryColor,
         fontSize: 16.sp,
       ),
@@ -30,35 +30,35 @@ class Style {
     textTheme: TextTheme(
       bodyLarge:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
       bodyMedium:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
       bodySmall:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
       titleLarge:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
       titleMedium:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
       titleSmall:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: AppColors.kPrimaryColor,
+      backgroundColor: AppColors.kBlackColor,
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: AppColors.kWhiteColor,
-      selectedItemColor: AppColors.kPrimaryColor,
+      selectedItemColor: AppColors.kBlackColor,
       unselectedItemColor: Colors.grey,
       type: BottomNavigationBarType.fixed,
     ),
@@ -66,22 +66,22 @@ class Style {
       style: ButtonStyle(
         textStyle: WidgetStateProperty.all(
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
-              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+              ? GoogleFonts.poppins(color: AppColors.kBlackColor)
+              : GoogleFonts.poppins(color: AppColors.kBlackColor),
         ),
       ),
     ),
     datePickerTheme: DatePickerThemeData(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      headerBackgroundColor: AppColors.kPrimaryColor,
-      todayBackgroundColor: MaterialStateProperty.all(AppColors.kPrimaryColor),
+      headerBackgroundColor: AppColors.kBlackColor,
+      todayBackgroundColor: MaterialStateProperty.all(AppColors.kBlackColor),
     ),
   );
 
   static final ThemeData darkTheme = ThemeData(
     colorScheme: ThemeData().colorScheme.copyWith(
-      primary: AppColors.kPrimaryColor,
-      onPrimary: AppColors.kPrimaryColor,
+      primary: AppColors.kBlackColor,
+      onPrimary: AppColors.kBlackColor,
       onSurface: AppColors.kWhiteColor,
     ),
     useMaterial3: false,
@@ -89,7 +89,7 @@ class Style {
     appBarTheme: AppBarTheme(
       backgroundColor: (AppColors.kDarkPrimaryColor),
       elevation: 0,
-      titleTextStyle: GoogleFonts.dmSans(
+      titleTextStyle: GoogleFonts.poppins(
         color: AppColors.kWhiteColor,
         fontSize: 18.sp,
       ),
@@ -102,28 +102,28 @@ class Style {
     textTheme: TextTheme(
       bodyLarge:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
       bodyMedium:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
       bodySmall:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
       titleLarge:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
       titleMedium:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
       titleSmall:
           isArabic()
-              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
-              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+              ? GoogleFonts.poppins(color: AppColors.kWhiteColor)
+              : GoogleFonts.poppins(color: AppColors.kWhiteColor),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: AppColors.kPrimaryColor,
@@ -138,7 +138,7 @@ class Style {
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         textStyle: WidgetStateProperty.all(
-          GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+          GoogleFonts.poppins(color: AppColors.kWhiteColor),
         ),
       ),
     ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "839694374515",
+    "project_id": "maps-app-7678a",
+    "storage_bucket": "maps-app-7678a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839694374515:android:374efbd5da4e87c25a7c06",
+        "android_client_info": {
+          "package_name": "com.example.sayaraty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh48SNwOQjTjnYWK18UDWum9DwluXLDH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

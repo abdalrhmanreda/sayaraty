@@ -1,7 +1,17 @@
 {
-  "appName": "muslim",
+  "appName": "Sayaraty",
   "gettingStarted": "Getting Started",
-  "gettingStartedDescription":"premium and prestige cars for sale.\nExperience the thrill at lower price." ,
-  "getStartedTitle":"premium Cars.\nEnjoy The Luxury",
-  "skip":"Skip"
+  "gettingStartedDescription": "premium and prestige cars for sale.\nExperience the thrill at lower price.",
+  "getStartedTitle": "premium Cars.\nEnjoy The Luxury",
+  "skip": "Skip",
+  "welcomeBack": "Welcome Back",
+  "welcomeBackDescription": "Sign in to start your journey.",
+  "signIn": "Sign In",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "Forgot Password?",
+  "dontHaveAnAccount": "Don't have an account?",
+  "signUp": "Sign Up" ,
+  "or": "Or"
+
 }
