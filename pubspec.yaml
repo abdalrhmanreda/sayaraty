@@ -188,3 +188,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  assets:
+    - assets/images/
+    - assets/images/get_started_images/
+    - assets/images/cars/bmw/
+    - assets/images/cars/audi/
+    - assets/images/cars/mercedes/
+

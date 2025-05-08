@@ -11,14 +11,14 @@ class Style {
     scaffoldBackgroundColor: AppColors.kScaffoldLightColor,
     useMaterial3: false,
     colorScheme: ThemeData().colorScheme.copyWith(
-          primary: AppColors.kPrimaryColor,
-          onPrimary: AppColors.kPrimaryColor,
-          onSurface: AppColors.kPrimaryColor,
-        ),
+      primary: AppColors.kPrimaryColor,
+      onPrimary: AppColors.kPrimaryColor,
+      onSurface: AppColors.kPrimaryColor,
+    ),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.kScaffoldLightColor,
       elevation: 0,
-      titleTextStyle: GoogleFonts.elMessiri(
+      titleTextStyle: GoogleFonts.dmSans(
         color: AppColors.kPrimaryColor,
         fontSize: 16.sp,
       ),
@@ -28,48 +28,30 @@ class Style {
       ),
     ),
     textTheme: TextTheme(
-      bodyLarge: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
-      bodyMedium: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
-      bodySmall: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
-      titleLarge: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
-      titleMedium: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
-      titleSmall: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kPrimaryColor,
-            ),
+      bodyLarge:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+      bodyMedium:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+      bodySmall:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+      titleLarge:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+      titleMedium:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
+      titleSmall:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: AppColors.kPrimaryColor,
@@ -84,38 +66,30 @@ class Style {
       style: ButtonStyle(
         textStyle: WidgetStateProperty.all(
           isArabic()
-              ? GoogleFonts.elMessiri(
-                  color: AppColors.kPrimaryColor,
-                )
-              : GoogleFonts.elMessiri(
-                  color: AppColors.kPrimaryColor,
-                ),
+              ? GoogleFonts.dmSans(color: AppColors.kPrimaryColor)
+              : GoogleFonts.dmSans(color: AppColors.kPrimaryColor),
         ),
       ),
     ),
     datePickerTheme: DatePickerThemeData(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       headerBackgroundColor: AppColors.kPrimaryColor,
-      todayBackgroundColor: MaterialStateProperty.all(
-        AppColors.kPrimaryColor,
-      ),
+      todayBackgroundColor: MaterialStateProperty.all(AppColors.kPrimaryColor),
     ),
   );
 
   static final ThemeData darkTheme = ThemeData(
     colorScheme: ThemeData().colorScheme.copyWith(
-          primary: AppColors.kPrimaryColor,
-          onPrimary: AppColors.kPrimaryColor,
-          onSurface: AppColors.kWhiteColor,
-        ),
+      primary: AppColors.kPrimaryColor,
+      onPrimary: AppColors.kPrimaryColor,
+      onSurface: AppColors.kWhiteColor,
+    ),
     useMaterial3: false,
     scaffoldBackgroundColor: (AppColors.kDarkPrimaryColor),
     appBarTheme: AppBarTheme(
       backgroundColor: (AppColors.kDarkPrimaryColor),
       elevation: 0,
-      titleTextStyle: GoogleFonts.elMessiri(
+      titleTextStyle: GoogleFonts.dmSans(
         color: AppColors.kWhiteColor,
         fontSize: 18.sp,
       ),
@@ -124,52 +98,32 @@ class Style {
         statusBarBrightness: Brightness.dark,
       ),
     ),
-    iconTheme: const IconThemeData(
-      color: AppColors.kWhiteColor,
-    ),
+    iconTheme: const IconThemeData(color: AppColors.kWhiteColor),
     textTheme: TextTheme(
-      bodyLarge: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
-      bodyMedium: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
-      bodySmall: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
-      titleLarge: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
-      titleMedium: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
-      titleSmall: isArabic()
-          ? GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            )
-          : GoogleFonts.elMessiri(
-              color: AppColors.kWhiteColor,
-            ),
+      bodyLarge:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+      bodyMedium:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+      bodySmall:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+      titleLarge:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+      titleMedium:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
+      titleSmall:
+          isArabic()
+              ? GoogleFonts.dmSans(color: AppColors.kWhiteColor)
+              : GoogleFonts.dmSans(color: AppColors.kWhiteColor),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: AppColors.kPrimaryColor,
@@ -179,18 +133,12 @@ class Style {
       unselectedItemColor: AppColors.kWhiteColor,
       type: BottomNavigationBarType.fixed,
     ),
-    buttonTheme: const ButtonThemeData(
-      buttonColor: AppColors.kDarkThemColor,
-    ),
-    listTileTheme: const ListTileThemeData(
-      iconColor: AppColors.kWhiteColor,
-    ),
+    buttonTheme: const ButtonThemeData(buttonColor: AppColors.kDarkThemColor),
+    listTileTheme: const ListTileThemeData(iconColor: AppColors.kWhiteColor),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         textStyle: WidgetStateProperty.all(
-          GoogleFonts.elMessiri(
-            color: AppColors.kWhiteColor,
-          ),
+          GoogleFonts.dmSans(color: AppColors.kWhiteColor),
         ),
       ),
     ),
@@ -209,7 +157,8 @@ class Style {
         hintStyle: GoogleFonts.aBeeZee(color: Colors.white),
       ),
     ),
-    timePickerTheme:
-        const TimePickerThemeData(backgroundColor: AppColors.kDarkThemColor),
+    timePickerTheme: const TimePickerThemeData(
+      backgroundColor: AppColors.kDarkThemColor,
+    ),
   );
 }
