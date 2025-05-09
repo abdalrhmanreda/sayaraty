@@ -4,11 +4,12 @@ import 'package:sayaraty/core/helpers/extensions.dart';
 
 import '../../../../config/colors/app_colors.dart';
 import '../../../../config/themes/font_weight.dart';
+import '../../../../core/helpers/spacing.dart';
 import '../../../../core/methods/get_responsive_text/responsive_text.dart';
-import '../../../register/ui/screens/phone_auth.dart';
+import '../../../login/ui/screens/login_screen.dart';
 
-class DonotHaveAccount extends StatelessWidget {
-  const DonotHaveAccount({super.key});
+class AlreadyHaveAnAccount extends StatelessWidget {
+  const AlreadyHaveAnAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,21 +17,23 @@ class DonotHaveAccount extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          AppLocalizations.of(context)!.dontHaveAccount,
+          AppLocalizations.of(context)!.alreadyHaveAccount,
           style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-            fontSize: getResponsiveFontSize(context, fontSize: 16),
+            fontSize: getResponsiveFontSize(context, fontSize: 15),
             fontWeight: FontWeightHelper.regular,
             color: AppColors.kGreyColor,
           ),
         ),
-        TextButton(
-          onPressed: () {
-            context.navigateToWidget(context, const PhoneAuthScreen());
+        Spacing.horizontalSpace(5),
+        GestureDetector(
+          onTap: () {
+            // Navigator.pushNamed(context, Routes.login);
+            context.navigateToWidget(context, const LoginScreen());
           },
           child: Text(
-            AppLocalizations.of(context)!.singUp,
+            AppLocalizations.of(context)!.login,
             style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              fontSize: getResponsiveFontSize(context, fontSize: 16),
+              fontSize: getResponsiveFontSize(context, fontSize: 15),
               fontWeight: FontWeightHelper.semiBold,
               color: AppColors.kPrimaryColor,
             ),

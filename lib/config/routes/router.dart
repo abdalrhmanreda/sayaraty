@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sayaraty/config/routes/routes_path.dart';
 import 'package:sayaraty/core/di/dependancy_injection.dart';
 import 'package:sayaraty/features/login/logic/login_cubit.dart';
-import 'package:sayaraty/features/login/ui/screen/login_screen.dart';
 
 import '../../features/get_started/ui/screens/get_started_screen.dart';
+import '../../features/login/ui/screens/login_screen.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
