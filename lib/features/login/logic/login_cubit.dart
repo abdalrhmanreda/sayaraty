@@ -1,22 +1,22 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:icons_plus/icons_plus.dart';
 
-import 'login_states.dart';
+part 'login_state.dart';
 
-// Define the states
-
-class LoginCubit extends Cubit<LoginStates> {
-  LoginCubit() : super(LoginInitialState());
+class LoginCubit extends Cubit<LoginState> {
+  LoginCubit() : super(LoginInitial());
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
   var formKey = GlobalKey<FormState>();
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
-  bool isPassword = true;
-  IconData suffix = Iconsax.eye_outline;
+  var forgotPasswordFormKey = GlobalKey<FormState>();
+  var forgotPasswordEmailController = TextEditingController();
+  var resetPasswordFormKey = GlobalKey<FormState>();
+  var newPasswordController = TextEditingController();
+  var confirmPasswordController = TextEditingController();
 
-  void changePasswordVisibility() {
-    isPassword = !isPassword;
-    suffix = isPassword ? Iconsax.eye_outline : Iconsax.eye_slash_outline;
-    emit(LoginChangePasswordVisibilityState());
+  void checkFormValidity() {
+    if (emailController.text.isNotEmpty && passwordController.text.isNotEmpty) {
+      emit(LoginFormValid(true));
+    }
   }
 }

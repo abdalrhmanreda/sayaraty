@@ -43,4 +43,13 @@ class AppColors {
   static const Color kUnSelectedCircleIndictiorColor = Color(0xff90a6a7);
   static const Color kButtonColor = Color(0xff004648);
   static const Color kCircleAvatarColor = Color(0xffe6f5f1);
+  static const Color kLoginWithFacebookColor = Color(0xfff2f6f8);
+  static const Color kOtpBorderColor = Color(0x0A0474ED);
+  static const Color kStatusColor = Color(0xff70c2f6);
+
+  // static const Color kLightGreyColor = Color(0xffe0e0e0);
+  static const Color kDoneBookingItem = Color(0xff15202e);
+  static const Color kDoneBookingItemDateColor = Color(0xff416c8c);
+  static const Color kOurServicesColor = Color(0xfff0f8fe);
+  static const Color kSelectMethodSoon = Color(0xff555c6a);
 }
