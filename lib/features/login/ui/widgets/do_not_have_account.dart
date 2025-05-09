@@ -5,6 +5,9 @@ import 'package:sayaraty/config/colors/app_colors.dart';
 import 'package:sayaraty/config/themes/font_weight.dart';
 import 'package:sayaraty/core/helpers/spacing.dart';
 import 'package:sayaraty/core/methods/get_responsive_text/responsive_text.dart';
+import 'package:sayaraty/features/register/ui/screens/register_screen.dart';
+
+import '../../../../core/animation/transactions.dart';
 
 class DoNotHaveAccount extends StatelessWidget {
   const DoNotHaveAccount({super.key});
@@ -78,7 +81,11 @@ class DoNotHaveAccount extends StatelessWidget {
             ),
             Spacing.horizontalSpace(5),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(
+                  context,
+                ).push(ScaleTransitionPage(RegisterScreen()));
+              },
               child: Text(
                 AppLocalizations.of(context)!.signUp,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
