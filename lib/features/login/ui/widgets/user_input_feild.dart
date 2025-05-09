@@ -47,9 +47,9 @@ class UserInputFeild extends StatelessWidget {
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: hintText,
-              suffixIcon: IconButton(
-                onPressed: onTap,
-                icon: Icon(icon, size: 22, color: AppColors.kGrayColor),
+              suffixIcon: GestureDetector(
+                onTap: onTap,
+                child: Icon(icon, size: 22, color: AppColors.kGrayColor),
               ),
 
               hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
