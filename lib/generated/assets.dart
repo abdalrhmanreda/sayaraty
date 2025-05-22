@@ -13,33 +13,21 @@ class Assets {
   static const String bmwBmw3 = 'assets/images/cars/bmw/bmw3.png';
   static const String bmwBmw4 = 'assets/images/cars/bmw/bmw4.png';
   static const String bmwBmw5 = 'assets/images/cars/bmw/bmw5.png';
-  static const String chevroletChevrolet1 =
-      'assets/images/cars/chevrolet/chevrolet1.png';
-  static const String chevroletChevrolet2 =
-      'assets/images/cars/chevrolet/chevrolet2.png';
-  static const String chevroletChevrolet3 =
-      'assets/images/cars/chevrolet/chevrolet3.png';
-  static const String chevroletChevrolet4 =
-      'assets/images/cars/chevrolet/chevrolet4.png';
-  static const String getStartedImagesGetStarted =
-      'assets/images/get_started_images/get_started.jpg';
-  static const String hyundaiHyundai1 =
-      'assets/images/cars/hyundai/hyundai1.png';
-  static const String hyundaiHyundai2 =
-      'assets/images/cars/hyundai/hyundai2.png';
-  static const String hyundaiHyundai3 =
-      'assets/images/cars/hyundai/hyundai3.png';
-  static const String hyundaiHyundai4 =
-      'assets/images/cars/hyundai/hyundai4.png';
-  static const String hyundaiHyundai5 =
-      'assets/images/cars/hyundai/hyundai5.png';
-  static const String hyundaiHyundai6 =
-      'assets/images/cars/hyundai/hyundai6.png';
+  static const String chevroletChevrolet1 = 'assets/images/cars/chevrolet/chevrolet1.png';
+  static const String chevroletChevrolet2 = 'assets/images/cars/chevrolet/chevrolet2.png';
+  static const String chevroletChevrolet3 = 'assets/images/cars/chevrolet/chevrolet3.png';
+  static const String chevroletChevrolet4 = 'assets/images/cars/chevrolet/chevrolet4.png';
+  static const String getStartedImagesGetStarted = 'assets/images/get_started_images/get_started.jpg';
+  static const String hyundaiHyundai1 = 'assets/images/cars/hyundai/hyundai1.png';
+  static const String hyundaiHyundai2 = 'assets/images/cars/hyundai/hyundai2.png';
+  static const String hyundaiHyundai3 = 'assets/images/cars/hyundai/hyundai3.png';
+  static const String hyundaiHyundai4 = 'assets/images/cars/hyundai/hyundai4.png';
+  static const String hyundaiHyundai5 = 'assets/images/cars/hyundai/hyundai5.png';
+  static const String hyundaiHyundai6 = 'assets/images/cars/hyundai/hyundai6.png';
+  static const String imagesDone = 'assets/images/done.json';
   static const String imagesWheel = 'assets/images/wheel.png';
-  static const String mercedesAutoPng30956 =
-      'assets/images/cars/mercedes/auto-png-30956.png';
-  static const String mercedesAutoPng30966 =
-      'assets/images/cars/mercedes/auto-png-30966.png';
-  static const String mercedesMercedes1 =
-      'assets/images/cars/mercedes/mercedes1.png';
+  static const String mercedesAutoPng30956 = 'assets/images/cars/mercedes/auto-png-30956.png';
+  static const String mercedesAutoPng30966 = 'assets/images/cars/mercedes/auto-png-30966.png';
+  static const String mercedesMercedes1 = 'assets/images/cars/mercedes/mercedes1.png';
+
 }
